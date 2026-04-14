@@ -34,3 +34,6 @@
 -- the name of the name attribute in a forms should be same as the name of the field in the database to ensure that the data is correctly mapped and stored in the database when the form is submitted. This consistency helps to avoid errors and ensures that the data is properly organized and accessible for future use.
 
 -- CRUD operations are the basic operations that can be performed on a database, which include Create (inserting new data), Read (retrieving data), Update (modifying existing data), and Delete (removing data). These operations are fundamental to managing and manipulating data in a database.
+
+
+-- deadlock is a situation in which two or more transactions are waiting for each other to release locks on resources, resulting in a standstill where none of the transactions can proceed. This can occur when multiple transactions are trying to access the same resources simultaneously, and they end up blocking each other. Deadlocks can lead to performance issues and can be resolved by implementing strategies such as timeout mechanisms or deadlock detection algorithms.
