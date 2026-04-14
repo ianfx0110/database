@@ -21,8 +21,10 @@
 
 -- table is a collection of related data organized in rows and columns, where each row represents a record and each column represents a field or attribute of the data.
 -- field is a specific piece of data within a table, representing a particular attribute or characteristic of the data.
+-- record is a complete set of related data within a table, representing a single instance or occurrence of the data.
 -- column is a vertical set of data within a table that represents a specific attribute or field of the data, while a row is a horizontal set of data that represents a single record or instance of the data.
 -- row is a horizontal set of data within a table that represents a single record or instance of the data, while a column is a vertical set of data that represents a specific attribute or field of the data.
+-- key is a field or combination of fields that uniquely identifies a record in a table, allowing for efficient retrieval and manipulation of data.
 -- primary key is a unique identifier for each record in a table, ensuring that each record can be uniquely identified and accessed.
 -- foreign key is a field in one table that refers to the primary key of another table, establishing a relationship between the two tables and allowing for data integrity and consistency.
 -- index is a data structure that improves the speed of data retrieval operations on a database table by allowing the database to quickly locate and access the relevant data based on the indexed fields.
