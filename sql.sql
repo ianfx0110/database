@@ -37,3 +37,30 @@
 
 
 -- deadlock is a situation in which two or more transactions are waiting for each other to release locks on resources, resulting in a standstill where none of the transactions can proceed. This can occur when multiple transactions are trying to access the same resources simultaneously, and they end up blocking each other. Deadlocks can lead to performance issues and can be resolved by implementing strategies such as timeout mechanisms or deadlock detection algorithms.
+
+-- CREATE this is used to create a new database, table, element or other database objects using SQL query we chain this with a key word like IF NOT EXISTS to avoid errors if the object already exists. only a single entity can be created at a time using this command.
+
+-- datatypes in sql are used to define the type of data that can be stored in a column of a table. Common datatypes include INT for integers, VARCHAR for variable-length strings, DATE for date values, and BOOLEAN for true/false values. Choosing the appropriate datatype is important for ensuring data integrity and optimizing storage and performance. Example of datatypes include:
+-- INT: used for storing whole numbers (e.g., 1, 100, -50)
+-- VARCHAR: used for storing variable-length strings (e.g., 'Hello', 'John Doe')
+-- DATE: used for storing date values (e.g., '2024-01-01')
+-- BOOLEAN: used for storing true/false values (e.g., TRUE, FALSE)
+-- TEXT: used for storing large amounts of text (e.g., 'This is a long description.')
+-- FLOAT: used for storing floating-point numbers (e.g., 3.14, -0.001)
+-- DECIMAL: used for storing precise decimal numbers (e.g., 10.99, -5.75)
+-- BLOB: used for storing binary data (e.g., images, files)
+-- ENUM: used for storing a predefined set of values (e.g., 'small', 'medium', 'large')
+-- TIMESTAMP: used for storing date and time values (e.g., '2024-01-01 12:00:00')
+-- CHAR: used for storing fixed-length strings (e.g., 'A', 'ABCD')
+
+CREATE DATABASE database_name;
+{
+    CREATE DATABASE IF NOT EXISTS Eldohub;
+}
+
+
+-- unique avoid duplicate values in a column, ensuring that each value is distinct and can be used as a unique identifier for records in the table. This constraint helps to maintain data integrity and prevent errors caused by duplicate entries.
+-- null avoid null values in a column, ensuring that every record has a value for that field. This constraint helps to maintain data integrity and prevent errors caused by missing or incomplete data.
+-- auto_increment is a feature that automatically generates a unique value for a column, typically used for primary keys. When a new record is inserted into the table, the auto_increment column will automatically increment its value by 1, ensuring that each record has a unique identifier without the need for manual input.
+
+CREATE TABLE table_name (id INT, fullname VARCHAR(20) NOT NULL, email VARCHAR(100) UNIQUE NOT NULL, password VARCHAR(20) NOT NULL);
