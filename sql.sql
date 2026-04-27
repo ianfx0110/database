@@ -53,14 +53,10 @@
 -- TIMESTAMP: used for storing date and time values (e.g., '2024-01-01 12:00:00')
 -- CHAR: used for storing fixed-length strings (e.g., 'A', 'ABCD')
 
-CREATE DATABASE database_name;
-{
-    CREATE DATABASE IF NOT EXISTS Eldohub;
-}
-
 
 -- unique avoid duplicate values in a column, ensuring that each value is distinct and can be used as a unique identifier for records in the table. This constraint helps to maintain data integrity and prevent errors caused by duplicate entries.
 -- null avoid null values in a column, ensuring that every record has a value for that field. This constraint helps to maintain data integrity and prevent errors caused by missing or incomplete data.
 -- auto_increment is a feature that automatically generates a unique value for a column, typically used for primary keys. When a new record is inserted into the table, the auto_increment column will automatically increment its value by 1, ensuring that each record has a unique identifier without the need for manual input.
 
-CREATE TABLE table_name (id INT, fullname VARCHAR(20) NOT NULL, email VARCHAR(100) UNIQUE NOT NULL, password VARCHAR(20) NOT NULL);
+
+-- CRUD Create (INSERT), Read (SELECT), Update (UPDATE), Delete (DELETE) are the basic operations that can be performed on a database, which include Create (inserting new data), Read (retrieving data), Update (modifying existing data), and Delete (removing data). These operations are fundamental to managing and manipulating data in a database.

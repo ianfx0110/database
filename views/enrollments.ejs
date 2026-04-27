@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enrollments</title>
+</head>
+<body>
+    <h1>All Enrollments</h1>
+    <ul>
+        <% enrollments.forEach(enrollment => { %>
+            <li> <%=enrollment.enrollment_id%> - enrollments: <%= enrollment.student_id %>, Course: <%= enrollment.course_id %>date:<%= enrollment.enrollment_date %> </li>
+        <% }) %>
+
+    </ul>
+</body>
+</html>
