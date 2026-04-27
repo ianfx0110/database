@@ -1,0 +1,34 @@
+ <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Course</title>
+</head>
+<body>
+    <h1> Register new course</h1>
+    <form action=" /newcourse" method="POST">
+        <div>
+            <label for="name">Course Id</label>
+            <input type="number" id="id" name="id" min="100" max="999">
+        </div>
+        <div>
+            <label for="name">Course Name</label>
+            <input type="text" id="coursename" name="coursename">
+        </div>
+        <div>
+            <label for="name">Course Description</label>
+            <input type="text" id="description" name="description">
+        </div>
+        <div>
+            <label for="name">Lecturer</label>
+            <input type="text" id="lecturer" name="lecturer">
+        </div>
+        <div>
+            <label for="name">Duration</label>
+            <input type="text" id="duration" name="duration">
+        </div>
+        <button type="submit">Add Course</button>
+
+</body>
+</html>

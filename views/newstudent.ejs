@@ -7,21 +7,21 @@
 </head>
 <body>
     <h1> Register new student</h1>
-    <form action=" ">
+    <form action=" /newstudent" method="POST">
         <div>
             <label for="name">Student Id</label>
-            <input type="number" id="id" name="id" min="100" max="999">
+            <input type="number" id="id" name="id" min="10" max="999">
         </div>
         <div>
-            <label for="name">full_name</label>
-            <input type="text" id="full_name" name="full_name">
+            <label for="name">Full Name</label>
+            <input type="text" id="fullname" name="fullname">
         </div>
         <div>
-            <label for="name">email</label>
+            <label for="name">Email</label>
             <input type="email" id="email" name="email">
         </div>
         <div>
-            <label for="name">password</label>
+            <label for="name">Password</label>
             <input type="password" id="password" name="password">
         </div>
         <div>
@@ -32,5 +32,7 @@
             <label for="name">Phone Number</label>
             <input type="number" id="phone" name="phone" min="1000000000" max="9999999999" placeholder="+254........">
         </div>
+        <button type="submit">Add Students</button>
+
 </body>
 </html>
